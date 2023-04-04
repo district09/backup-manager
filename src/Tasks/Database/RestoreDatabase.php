@@ -1,14 +1,14 @@
-<?php namespace BackupManager\Tasks\Database;
+<?php namespace District09\BackupManager\Tasks\Database;
 
-use BackupManager\Tasks\Task;
-use BackupManager\Databases\Database;
+use District09\BackupManager\Tasks\Task;
+use District09\BackupManager\Databases\Database;
 use Symfony\Component\Process\Process;
-use BackupManager\ShellProcessing\ShellProcessor;
-use BackupManager\ShellProcessing\ShellProcessFailed;
+use District09\BackupManager\ShellProcessing\ShellProcessor;
+use District09\BackupManager\ShellProcessing\ShellProcessFailed;
 
 /**
  * Class RestoreDatabase
- * @package BackupManager\Tasks\Database
+ * @package District09\BackupManager\Tasks\Database
  */
 class RestoreDatabase implements Task
 {

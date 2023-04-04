@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
 use PhpSpec\Exception\Example\SkippingException;
 use PhpSpec\ObjectBehavior;
@@ -17,7 +17,7 @@ class FtpFilesystemSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\FtpFilesystem');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\FtpFilesystem');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()

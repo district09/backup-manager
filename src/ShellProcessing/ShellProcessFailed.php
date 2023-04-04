@@ -1,8 +1,8 @@
-<?php namespace BackupManager\ShellProcessing;
+<?php namespace District09\BackupManager\ShellProcessing;
 
 /**
  * Class ShellProcessFailed
- * @package BackupManager\ShellProcessing
+ * @package District09\BackupManager\ShellProcessing
  */
 class ShellProcessFailed extends \Exception
 {

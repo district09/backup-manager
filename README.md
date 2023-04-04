@@ -166,7 +166,7 @@ This package provides a framework-agnostic database backup manager for dumping t
 Backup the development database to `Amazon S3`. The S3 backup path will be `test/backup.sql.gz` in the end, when `gzip` is done with it.
 
 ```php
-use BackupManager\Filesystems\Destination;
+use District09\BackupManager\Filesystems\Destination;
 
 $manager = require 'bootstrap.php';
 $manager->makeBackup()->run('development', [new Destination('s3', 'test/backup.sql')], 'gzip');

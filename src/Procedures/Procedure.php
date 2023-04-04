@@ -1,11 +1,11 @@
-<?php namespace BackupManager\Procedures;
+<?php namespace District09\BackupManager\Procedures;
 
-use BackupManager\Config\ConfigFieldNotFound;
-use BackupManager\Config\ConfigNotFoundForConnection;
-use BackupManager\Databases\DatabaseProvider;
-use BackupManager\Compressors\CompressorProvider;
-use BackupManager\Filesystems\FilesystemProvider;
-use BackupManager\ShellProcessing\ShellProcessor;
+use District09\BackupManager\Config\ConfigFieldNotFound;
+use District09\BackupManager\Config\ConfigNotFoundForConnection;
+use District09\BackupManager\Databases\DatabaseProvider;
+use District09\BackupManager\Compressors\CompressorProvider;
+use District09\BackupManager\Filesystems\FilesystemProvider;
+use District09\BackupManager\ShellProcessing\ShellProcessor;
 
 /**
  * Class Procedure

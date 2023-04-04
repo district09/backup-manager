@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Databases;
+<?php namespace District09\BackupManager\Databases;
 
 /**
  * Class PostgresqlDatabase
- * @package BackupManager\Databases
+ * @package District09\BackupManager\Databases
  */
 class PostgresqlDatabase implements Database
 {

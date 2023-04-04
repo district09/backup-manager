@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Databases;
+<?php namespace District09\BackupManager\Databases;
 
 /**
  * Class DatabaseTypeNotSupported
- * @package BackupManager\Databases
+ * @package District09\BackupManager\Databases
  */
 class DatabaseTypeNotSupported extends \Exception
 {

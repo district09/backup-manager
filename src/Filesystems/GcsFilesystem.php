@@ -1,4 +1,4 @@
-<?php namespace BackupManager\Filesystems;
+<?php namespace District09\BackupManager\Filesystems;
 
 use Google\Cloud\Storage\StorageClient;
 use League\Flysystem\Filesystem as Flysystem;
@@ -6,7 +6,7 @@ use League\Flysystem\GoogleCloudStorage\GoogleCloudStorageAdapter;
 
 /**
  * Class GcsFilesystem
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 class GcsFilesystem implements Filesystem
 {

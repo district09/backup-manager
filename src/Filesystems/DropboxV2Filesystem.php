@@ -1,9 +1,9 @@
-<?php namespace BackupManager\Filesystems;
+<?php namespace District09\BackupManager\Filesystems;
 
 use League\Flysystem\Filesystem as Flysystem;
 
 /**
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 class DropboxV2Filesystem extends DropboxFilesystem
 {

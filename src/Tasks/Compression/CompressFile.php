@@ -1,14 +1,14 @@
-<?php namespace BackupManager\Tasks\Compression;
+<?php namespace District09\BackupManager\Tasks\Compression;
 
 use Symfony\Component\Process\Process;
-use BackupManager\ShellProcessing\ShellProcessFailed;
-use BackupManager\Tasks\Task;
-use BackupManager\Compressors\Compressor;
-use BackupManager\ShellProcessing\ShellProcessor;
+use District09\BackupManager\ShellProcessing\ShellProcessFailed;
+use District09\BackupManager\Tasks\Task;
+use District09\BackupManager\Compressors\Compressor;
+use District09\BackupManager\ShellProcessing\ShellProcessor;
 
 /**
  * Class CompressFile
- * @package BackupManager\Tasks\Compression
+ * @package District09\BackupManager\Tasks\Compression
  */
 class CompressFile implements Task
 {

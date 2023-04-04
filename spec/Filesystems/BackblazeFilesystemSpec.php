@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
 use BackblazeB2\Http\Client;
 use GuzzleHttp\Handler\MockHandler;
@@ -20,7 +20,7 @@ class BackblazeFilesystemSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\BackblazeFilesystem');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\BackblazeFilesystem');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()

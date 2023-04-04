@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
-use BackupManager\Filesystems\FlysystemFilesystem;
+use District09\BackupManager\Filesystems\FlysystemFilesystem;
 use League\Flysystem\FilesystemAdapter;
 use League\Flysystem\MountManager;
 use PhpSpec\ObjectBehavior;

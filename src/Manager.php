@@ -1,11 +1,11 @@
 <?php namespace BackupManager;
 
-use BackupManager\Procedures;
+use District09\BackupManager\Procedures;
 use Symfony\Component\Process\Process;
-use BackupManager\Databases\DatabaseProvider;
-use BackupManager\Filesystems\FilesystemProvider;
-use BackupManager\Compressors\CompressorProvider;
-use BackupManager\ShellProcessing\ShellProcessor;
+use District09\BackupManager\Databases\DatabaseProvider;
+use District09\BackupManager\Filesystems\FilesystemProvider;
+use District09\BackupManager\Compressors\CompressorProvider;
+use District09\BackupManager\ShellProcessing\ShellProcessor;
 
 /**
  * Class Manager

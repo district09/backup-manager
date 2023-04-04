@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Config;
+<?php namespace District09\BackupManager\Config;
 
 /**
  * Class Config
- * @package BackupManager\Config
+ * @package District09\BackupManager\Config
  */
 class Config
 {

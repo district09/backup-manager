@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Databases;
+<?php namespace District09\BackupManager\Databases;
 
 /**
  * Class Database
- * @package BackupManager\Databases
+ * @package District09\BackupManager\Databases
  */
 interface Database
 {

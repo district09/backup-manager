@@ -1,12 +1,12 @@
-<?php namespace BackupManager\Tasks\Storage;
+<?php namespace District09\BackupManager\Tasks\Storage;
 
 use League\Flysystem\Filesystem;
-use BackupManager\Tasks\Task;
+use District09\BackupManager\Tasks\Task;
 use League\Flysystem\FilesystemException;
 
 /**
  * Class TransferFile
- * @package BackupManager\Tasks\Storage
+ * @package District09\BackupManager\Tasks\Storage
  */
 class TransferFile implements Task
 {

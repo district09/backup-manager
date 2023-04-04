@@ -1,4 +1,4 @@
-<?php namespace BackupManager\Filesystems;
+<?php namespace District09\BackupManager\Filesystems;
 
 use BackblazeB2\Client;
 use League\Flysystem\Filesystem as Flysystem;
@@ -6,7 +6,7 @@ use MarcAndreAppel\FlysystemBackblaze\BackblazeAdapter;
 
 /**
  * Class BackblazeFilesystem
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 class BackblazeFilesystem implements Filesystem
 {

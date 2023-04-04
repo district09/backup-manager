@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
 use PhpSpec\Exception\Example\SkippingException;
 use PhpSpec\ObjectBehavior;
@@ -16,7 +16,7 @@ class GcsFilesystemSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\GcsFilesystem');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\GcsFilesystem');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()

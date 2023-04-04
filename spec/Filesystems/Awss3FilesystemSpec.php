@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
 use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
 use PhpSpec\ObjectBehavior;
@@ -10,7 +10,7 @@ class Awss3FilesystemSpec extends ObjectBehavior
 {
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\Awss3Filesystem');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\Awss3Filesystem');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()

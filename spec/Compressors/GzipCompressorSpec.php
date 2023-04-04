@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager\Compressors;
+namespace spec\District09\BackupManager\Compressors;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,7 +9,7 @@ class GzipCompressorSpec extends ObjectBehavior
 {
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Compressors\GzipCompressor');
+        $this->shouldHaveType('District09\BackupManager\Compressors\GzipCompressor');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()

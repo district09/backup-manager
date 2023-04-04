@@ -1,10 +1,10 @@
 <?php
 
-namespace BackupManager\Filesystems;
+namespace District09\BackupManager\Filesystems;
 
 /**
  * Interface Filesystem
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 interface Filesystem
 {

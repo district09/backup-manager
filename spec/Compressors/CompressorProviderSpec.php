@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\BackupManager\Compressors;
+namespace spec\District09\BackupManager\Compressors;
 
-use BackupManager\Compressors\GzipCompressor;
+use District09\BackupManager\Compressors\GzipCompressor;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -10,17 +10,17 @@ class CompressorProviderSpec extends ObjectBehavior
 {
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Compressors\CompressorProvider');
+        $this->shouldHaveType('District09\BackupManager\Compressors\CompressorProvider');
     }
 
     public function it_should_provide_compressors_by_name()
     {
         $this->add(new GzipCompressor);
-        $this->get('gzip')->shouldHaveType('BackupManager\Compressors\GzipCompressor');
+        $this->get('gzip')->shouldHaveType('District09\BackupManager\Compressors\GzipCompressor');
     }
 
     public function it_should_throw_an_exception_if_it_cant_find_a_compressor()
     {
-        $this->shouldThrow('BackupManager\Compressors\CompressorTypeNotSupported')->during('get', ['unsupported']);
+        $this->shouldThrow('District09\BackupManager\Compressors\CompressorTypeNotSupported')->during('get', ['unsupported']);
     }
 }
