@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager;
+namespace spec\District09\BackupManager;
 
 use District09\BackupManager\Compressors\CompressorProvider;
 use District09\BackupManager\Databases\DatabaseProvider;
