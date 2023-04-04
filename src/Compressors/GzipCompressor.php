@@ -7,7 +7,7 @@
 class GzipCompressor implements Compressor
 {
     /**
-     * @param string $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)

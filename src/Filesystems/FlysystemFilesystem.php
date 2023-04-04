@@ -20,7 +20,7 @@ class FlysystemFilesystem implements Filesystem
     }
 
     /**
-     * @param string $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)

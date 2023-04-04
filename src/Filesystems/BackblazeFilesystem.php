@@ -12,7 +12,7 @@ class BackblazeFilesystem implements Filesystem
 {
     /**
      * Test fitness of visitor.
-     * @param string $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)
