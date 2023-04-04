@@ -1,11 +1,13 @@
-<?php namespace BackupManager;
+<?php
 
-use BackupManager\Procedures;
+namespace District09\BackupManager;
+
+use District09\BackupManager\Procedures;
 use Symfony\Component\Process\Process;
-use BackupManager\Databases\DatabaseProvider;
-use BackupManager\Filesystems\FilesystemProvider;
-use BackupManager\Compressors\CompressorProvider;
-use BackupManager\ShellProcessing\ShellProcessor;
+use District09\BackupManager\Databases\DatabaseProvider;
+use District09\BackupManager\Filesystems\FilesystemProvider;
+use District09\BackupManager\Compressors\CompressorProvider;
+use District09\BackupManager\ShellProcessing\ShellProcessor;
 
 /**
  * Class Manager
@@ -69,6 +71,6 @@ class Manager
      */
     protected function getShellProcessor()
     {
-        return new ShellProcessor(new Process([], null, null, null, null));
+        return new ShellProcessor();
     }
 }

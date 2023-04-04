@@ -1,16 +1,16 @@
-<?php namespace BackupManager\Procedures;
+<?php namespace District09\BackupManager\Procedures;
 
-use BackupManager\Compressors\CompressorTypeNotSupported;
-use BackupManager\Config\ConfigFieldNotFound;
-use BackupManager\Config\ConfigNotFoundForConnection;
-use BackupManager\Databases\DatabaseTypeNotSupported;
-use BackupManager\Filesystems\Destination;
-use BackupManager\Filesystems\FilesystemTypeNotSupported;
-use BackupManager\Tasks;
+use District09\BackupManager\Compressors\CompressorTypeNotSupported;
+use District09\BackupManager\Config\ConfigFieldNotFound;
+use District09\BackupManager\Config\ConfigNotFoundForConnection;
+use District09\BackupManager\Databases\DatabaseTypeNotSupported;
+use District09\BackupManager\Filesystems\Destination;
+use District09\BackupManager\Filesystems\FilesystemTypeNotSupported;
+use District09\BackupManager\Tasks;
 
 /**
  * Class BackupProcedure
- * @package BackupManager\Procedures
+ * @package District09\BackupManager\Procedures
  */
 class BackupProcedure extends Procedure
 {

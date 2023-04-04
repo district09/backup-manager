@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Databases;
+<?php namespace District09\BackupManager\Databases;
 
 /**
  * Class PostgresqlDatabase
- * @package BackupManager\Databases
+ * @package District09\BackupManager\Databases
  */
 class PostgresqlDatabase implements Database
 {
@@ -10,7 +10,7 @@ class PostgresqlDatabase implements Database
     private $config;
 
     /**
-     * @param $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)
@@ -20,7 +20,7 @@ class PostgresqlDatabase implements Database
 
     /**
      * @param array $config
-     * @return null
+     * @return void
      */
     public function setConfig(array $config)
     {
@@ -28,7 +28,7 @@ class PostgresqlDatabase implements Database
     }
 
     /**
-     * @param $outputPath
+     * @param string $outputPath
      * @return string
      */
     public function getDumpCommandLine($outputPath)
@@ -45,7 +45,7 @@ class PostgresqlDatabase implements Database
     }
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getRestoreCommandLine($inputPath)

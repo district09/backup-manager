@@ -1,12 +1,13 @@
-<?php namespace BackupManager\Tasks\Storage;
+<?php namespace District09\BackupManager\Tasks\Storage;
 
 use League\Flysystem\FileNotFoundException;
 use League\Flysystem\Filesystem;
-use BackupManager\Tasks\Task;
+use District09\BackupManager\Tasks\Task;
+use League\Flysystem\FilesystemException;
 
 /**
  * Class DeleteFile
- * @package BackupManager\Tasks\Storage
+ * @package District09\BackupManager\Tasks\Storage
  */
 class DeleteFile implements Task
 {
@@ -17,7 +18,7 @@ class DeleteFile implements Task
 
     /**
      * @param Filesystem $filesystem
-     * @param $filePath
+     * @param string $filePath
      */
     public function __construct(Filesystem $filesystem, $filePath)
     {
@@ -27,10 +28,12 @@ class DeleteFile implements Task
 
     /**
      * @return bool
-     * @throws FileNotFoundException
+     * @throws FilesystemException
      */
     public function execute()
     {
-        return $this->filesystem->delete($this->filePath);
+        $this->filesystem->delete($this->filePath);
+
+        return true;
     }
 }

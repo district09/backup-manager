@@ -1,6 +1,6 @@
 <?php
 
-use BackupManager\Filesystems\Destination;
+use District09\BackupManager\Filesystems\Destination;
 
 $manager = require 'bootstrap.php';
 $manager

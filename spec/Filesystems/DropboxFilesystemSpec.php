@@ -1,15 +1,23 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
+use PhpSpec\Exception\Example\SkippingException;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
 class DropboxFilesystemSpec extends ObjectBehavior
 {
+    public function let(): void
+    {
+        if (!class_exists('Spatie\FlysystemDropbox\DropboxAdapter')) {
+            throw new SkippingException('Requires Spatie Dropbox');
+        }
+    }
+
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\DropboxFilesystem');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\DropboxFilesystem');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()
@@ -21,12 +29,6 @@ class DropboxFilesystemSpec extends ObjectBehavior
         foreach ([null, 'foo'] as $type) {
             $this->handles($type)->shouldBe(false);
         }
-    }
-
-    public function it_should_provide_an_instance_of_a_dropbox_filesystem()
-    {
-        $this->get($this->getConfig())->getAdapter()
-            ->shouldHaveType('Spatie\FlysystemDropbox\DropboxAdapter');
     }
 
     public function getConfig()

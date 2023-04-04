@@ -1,37 +1,37 @@
-<?php namespace BackupManager\Compressors;
+<?php namespace District09\BackupManager\Compressors;
 
 /**
  * Interface Compressor
- * @package BackupManager\Compressors
+ * @package District09\BackupManager\Compressors
  */
 interface Compressor
 {
     /**
-     * @param $type
+     * @param string $type
      * @return bool
      */
     public function handles($type);
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getCompressCommandLine($inputPath);
 
     /**
-     * @param $outputPath
+     * @param string $outputPath
      * @return string
      */
     public function getDecompressCommandLine($outputPath);
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getCompressedPath($inputPath);
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getDecompressedPath($inputPath);

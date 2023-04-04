@@ -1,18 +1,18 @@
-<?php namespace BackupManager\Filesystems;
+<?php namespace District09\BackupManager\Filesystems;
 
 use Google\Cloud\Storage\StorageClient;
 use League\Flysystem\Filesystem as Flysystem;
-use Superbalist\Flysystem\GoogleStorage\GoogleStorageAdapter;
+use League\Flysystem\GoogleCloudStorage\GoogleCloudStorageAdapter;
 
 /**
  * Class GcsFilesystem
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 class GcsFilesystem implements Filesystem
 {
 
     /**
-     * @param $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)
@@ -32,6 +32,6 @@ class GcsFilesystem implements Filesystem
         ]);
         $bucket = $storageClient->bucket($config['bucket']);
 
-        return new Flysystem(new GoogleStorageAdapter($storageClient, $bucket, $config['prefix']));
+        return new Flysystem(new GoogleCloudStorageAdapter($bucket, $config['prefix']));
     }
 }

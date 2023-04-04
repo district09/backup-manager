@@ -1,17 +1,18 @@
-<?php namespace BackupManager\Filesystems;
+<?php namespace District09\BackupManager\Filesystems;
 
 use League\Flysystem\AwsS3v3\AwsS3Adapter;
 use Aws\S3\S3Client;
+use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
 use League\Flysystem\Filesystem as Flysystem;
 
 /**
  * Class Awss3Filesystem
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 class Awss3Filesystem implements Filesystem
 {
     /**
-     * @param $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)
@@ -36,6 +37,6 @@ class Awss3Filesystem implements Filesystem
             'use_path_style_endpoint' => isset($config['use_path_style_endpoint']) ? $config['use_path_style_endpoint'] : false,
         ]);
 
-        return new Flysystem(new AwsS3Adapter($client, $config['bucket'], $config['root']));
+        return new Flysystem(new AwsS3V3Adapter($client, $config['bucket'], $config['root']));
     }
 }

@@ -1,10 +1,10 @@
-<?php namespace BackupManager\Procedures;
+<?php namespace District09\BackupManager\Procedures;
 
-use BackupManager\Tasks\Task;
+use District09\BackupManager\Tasks\Task;
 
 /**
  * Class Sequence
- * @package BackupManager\Procedures
+ * @package District09\BackupManager\Procedures
  */
 class Sequence
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
 use BackblazeB2\Http\Client;
 use GuzzleHttp\Handler\MockHandler;
@@ -13,14 +13,14 @@ class BackblazeFilesystemSpec extends ObjectBehavior
 {
     public function let(): void
     {
-        if (!class_exists('Mhetreramesh\Flysystem\BackblazeAdapter')) {
+        if (!class_exists('MarcAndreAppel\FlysystemBackblaze\BackblazeAdapter')) {
             throw new SkippingException('Requires Backblaze');
         }
     }
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\BackblazeFilesystem');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\BackblazeFilesystem');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()
@@ -32,11 +32,6 @@ class BackblazeFilesystemSpec extends ObjectBehavior
         foreach ([null, 'foo'] as $type) {
             $this->handles($type)->shouldBe(false);
         }
-    }
-
-    public function it_should_provide_an_instance_of_an_b2_filesystem()
-    {
-        $this->get($this->getConfig())->getAdapter()->shouldHaveType('Mhetreramesh\Flysystem\BackblazeAdapter');
     }
 
     public function getConfig()

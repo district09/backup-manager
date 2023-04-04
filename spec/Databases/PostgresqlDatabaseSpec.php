@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\BackupManager\Databases;
+namespace spec\District09\BackupManager\Databases;
 
-use BackupManager\Config\Config;
+use District09\BackupManager\Config\Config;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -10,7 +10,7 @@ class PostgresqlDatabaseSpec extends ObjectBehavior
 {
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Databases\PostgresqlDatabase');
+        $this->shouldHaveType('District09\BackupManager\Databases\PostgresqlDatabase');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()

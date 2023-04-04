@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Tasks;
+<?php namespace District09\BackupManager\Tasks;
 
 /**
  * Interface Task
- * @package BackupManager\Tasks
+ * @package District09\BackupManager\Tasks
  */
 interface Task
 {

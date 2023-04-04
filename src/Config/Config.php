@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Config;
+<?php namespace District09\BackupManager\Config;
 
 /**
  * Class Config
- * @package BackupManager\Config
+ * @package District09\BackupManager\Config
  */
 class Config
 {
@@ -10,7 +10,7 @@ class Config
     private $config = [];
 
     /**
-     * @param $path
+     * @param string $path
      * @return static
      * @throws ConfigFileNotFound
      */
@@ -32,8 +32,8 @@ class Config
     }
 
     /**
-     * @param $name
-     * @param null $field
+     * @param string $name
+     * @param null|string $field
      * @return mixed
      * @throws ConfigFieldNotFound
      * @throws ConfigNotFoundForConnection
@@ -58,8 +58,8 @@ class Config
     }
 
     /**
-     * @param $name
-     * @param $field
+     * @param string $name
+     * @param string $field
      * @return mixed
      * @throws ConfigFieldNotFound
      */
