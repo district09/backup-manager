@@ -10,7 +10,7 @@ class PostgresqlDatabase implements Database
     private $config;
 
     /**
-     * @param string $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)
