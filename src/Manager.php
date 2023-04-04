@@ -1,4 +1,6 @@
-<?php namespace BackupManager;
+<?php
+
+namespace District09\BackupManager;
 
 use District09\BackupManager\Procedures;
 use Symfony\Component\Process\Process;
