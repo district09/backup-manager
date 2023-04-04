@@ -10,8 +10,8 @@ class FtpFilesystemSpec extends ObjectBehavior
 {
     public function let(): void
     {
-        if (!class_exists('League\Flysystem\Adapter\FtpAdapter')) {
-            throw new SkippingException('Requires Spatie Dropbox');
+        if (!class_exists('League\Flysystem\PhpseclibV3\SftpAdapter')) {
+            throw new SkippingException('Requires Flysystem PhpseclibV3');
         }
     }
 
