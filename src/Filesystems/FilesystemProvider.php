@@ -53,7 +53,7 @@ class FilesystemProvider
 
     /**
      * @param $name
-     * @param null $key
+     * @param null|string $key
      * @return mixed
      * @throws ConfigNotFoundForConnection
      * @throws ConfigFieldNotFound

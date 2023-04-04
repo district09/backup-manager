@@ -20,7 +20,7 @@ class MysqlDatabase implements Database
 
     /**
      * @param array $config
-     * @return null
+     * @return void
      */
     public function setConfig(array $config)
     {

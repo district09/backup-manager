@@ -33,7 +33,7 @@ class Config
 
     /**
      * @param $name
-     * @param null $field
+     * @param null|string $field
      * @return mixed
      * @throws ConfigFieldNotFound
      * @throws ConfigNotFoundForConnection

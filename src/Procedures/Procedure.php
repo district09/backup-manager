@@ -39,7 +39,7 @@ abstract class Procedure
 
     /**
      * @param $name
-     * @param null $filename
+     * @param null|string $filename
      * @return string
      * @throws ConfigNotFoundForConnection
      * @throws ConfigFieldNotFound
