@@ -32,6 +32,6 @@ class GcsFilesystem implements Filesystem
         ]);
         $bucket = $storageClient->bucket($config['bucket']);
 
-        return new Flysystem(new GoogleCloudStorageAdapter($storageClient, $bucket, $config['prefix']));
+        return new Flysystem(new GoogleCloudStorageAdapter($bucket, $config['prefix']));
     }
 }

@@ -1,6 +1,6 @@
 <?php namespace BackupManager\Filesystems;
 
-use League\Flysystem\FilesystemAdapter;
+use League\Flysystem\Filesystem as Flysystem;
 use League\Flysystem\MountManager;
 
 /**
@@ -10,7 +10,7 @@ use League\Flysystem\MountManager;
 class FlysystemFilesystem implements Filesystem
 {
     /**
-     * @var array|FilesystemAdapter[]
+     * @var array|Flysystem[]
      */
     private $filesystems;
 

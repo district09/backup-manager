@@ -7,7 +7,7 @@ use League\Flysystem\PhpseclibV3\SftpAdapter;
  * Class SftpFilesystem
  * @package BackupManager\Filesystems
  */
-class SftpFilesystem implements Filesystem
+class SftpFilesystem extends FtpFilesystem
 {
     /**
      * Test fitness of visitor.
@@ -17,14 +17,5 @@ class SftpFilesystem implements Filesystem
     public function handles($type)
     {
         return strtolower($type ?? '') == 'sftp';
-    }
-
-    /**
-     * @param array $config
-     * @return Flysystem
-     */
-    public function get(array $config)
-    {
-        return new Flysystem(new SftpAdapter($config));
     }
 }
