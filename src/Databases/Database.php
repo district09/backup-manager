@@ -7,7 +7,7 @@
 interface Database
 {
     /**
-     * @param $type
+     * @param string $type
      * @return bool
      */
     public function handles($type);
@@ -19,13 +19,13 @@ interface Database
     public function setConfig(array $config);
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getDumpCommandLine($inputPath);
 
     /**
-     * @param $outputPath
+     * @param string $outputPath
      * @return string
      */
     public function getRestoreCommandLine($outputPath);

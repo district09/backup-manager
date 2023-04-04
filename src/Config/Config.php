@@ -10,7 +10,7 @@ class Config
     private $config = [];
 
     /**
-     * @param $path
+     * @param string $path
      * @return static
      * @throws ConfigFileNotFound
      */
@@ -32,7 +32,7 @@ class Config
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @param null|string $field
      * @return mixed
      * @throws ConfigFieldNotFound
@@ -58,8 +58,8 @@ class Config
     }
 
     /**
-     * @param $name
-     * @param $field
+     * @param string $name
+     * @param string $field
      * @return mixed
      * @throws ConfigFieldNotFound
      */

@@ -10,7 +10,7 @@ class PostgresqlDatabase implements Database
     private $config;
 
     /**
-     * @param $type
+     * @param string $type
      * @return bool
      */
     public function handles($type)
@@ -28,7 +28,7 @@ class PostgresqlDatabase implements Database
     }
 
     /**
-     * @param $outputPath
+     * @param string $outputPath
      * @return string
      */
     public function getDumpCommandLine($outputPath)
@@ -45,7 +45,7 @@ class PostgresqlDatabase implements Database
     }
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getRestoreCommandLine($inputPath)

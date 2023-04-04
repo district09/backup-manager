@@ -10,7 +10,7 @@ class MysqlDatabase implements Database
     private $config;
 
     /**
-     * @param $type
+     * @param string $type
      * @return bool
      */
     public function handles($type)
@@ -28,7 +28,7 @@ class MysqlDatabase implements Database
     }
 
     /**
-     * @param $outputPath
+     * @param string $outputPath
      * @return string
      */
     public function getDumpCommandLine($outputPath)
@@ -66,7 +66,7 @@ class MysqlDatabase implements Database
     }
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getRestoreCommandLine($inputPath)

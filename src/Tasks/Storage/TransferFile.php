@@ -21,9 +21,9 @@ class TransferFile implements Task
 
     /**
      * @param Filesystem $sourceFilesystem
-     * @param $sourcePath
+     * @param string $sourcePath
      * @param Filesystem $destinationFilesystem
-     * @param $destinationPath
+     * @param string $destinationPath
      */
     public function __construct(Filesystem $sourceFilesystem, $sourcePath, Filesystem $destinationFilesystem, $destinationPath)
     {

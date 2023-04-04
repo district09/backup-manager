@@ -31,7 +31,7 @@ class DatabaseProvider
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @return Database
      * @throws DatabaseTypeNotSupported
      * @throws ConfigNotFoundForConnection

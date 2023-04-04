@@ -21,7 +21,7 @@ class DecompressFile implements Task
 
     /**
      * @param Compressor $compressor
-     * @param $sourcePath
+     * @param string $sourcePath
      * @param ShellProcessor $shellProcessor
      */
     public function __construct(Compressor $compressor, $sourcePath, ShellProcessor $shellProcessor)

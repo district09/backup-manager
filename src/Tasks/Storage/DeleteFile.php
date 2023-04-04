@@ -18,7 +18,7 @@ class DeleteFile implements Task
 
     /**
      * @param Filesystem $filesystem
-     * @param $filePath
+     * @param string $filePath
      */
     public function __construct(Filesystem $filesystem, $filePath)
     {

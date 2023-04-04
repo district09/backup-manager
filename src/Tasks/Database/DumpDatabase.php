@@ -21,7 +21,7 @@ class DumpDatabase implements Task
 
     /**
      * @param Database $database
-     * @param $outputPath
+     * @param string $outputPath
      * @param ShellProcessor $shellProcessor
      */
     public function __construct(Database $database, $outputPath, ShellProcessor $shellProcessor)

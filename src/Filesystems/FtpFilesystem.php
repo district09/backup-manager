@@ -12,7 +12,7 @@ class FtpFilesystem implements Filesystem
 {
     /**
      * Test fitness of visitor.
-     * @param $type
+     * @param string $type
      * @return bool
      */
     public function handles($type)

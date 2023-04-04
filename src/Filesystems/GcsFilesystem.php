@@ -12,7 +12,7 @@ class GcsFilesystem implements Filesystem
 {
 
     /**
-     * @param $type
+     * @param string $type
      * @return bool
      */
     public function handles($type)

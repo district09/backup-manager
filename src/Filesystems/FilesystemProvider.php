@@ -32,7 +32,7 @@ class FilesystemProvider
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @return \League\Flysystem\Filesystem
      * @throws FilesystemTypeNotSupported
      * @throws ConfigNotFoundForConnection
@@ -52,7 +52,7 @@ class FilesystemProvider
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @param null|string $key
      * @return mixed
      * @throws ConfigNotFoundForConnection

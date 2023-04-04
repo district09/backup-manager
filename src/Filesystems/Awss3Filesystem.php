@@ -12,7 +12,7 @@ use League\Flysystem\Filesystem as Flysystem;
 class Awss3Filesystem implements Filesystem
 {
     /**
-     * @param $type
+     * @param string $type
      * @return bool
      */
     public function handles($type)

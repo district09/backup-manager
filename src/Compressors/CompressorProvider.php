@@ -18,7 +18,7 @@ class CompressorProvider
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @return Compressor
      * @throws CompressorTypeNotSupported
      */

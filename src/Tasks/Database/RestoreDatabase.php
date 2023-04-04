@@ -21,7 +21,7 @@ class RestoreDatabase implements Task
 
     /**
      * @param Database $database
-     * @param $inputPath
+     * @param string $inputPath
      * @param ShellProcessor $shellProcessor
      */
     public function __construct(Database $database, $inputPath, ShellProcessor $shellProcessor)
