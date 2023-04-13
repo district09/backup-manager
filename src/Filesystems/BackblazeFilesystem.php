@@ -1,18 +1,18 @@
-<?php namespace BackupManager\Filesystems;
+<?php namespace District09\BackupManager\Filesystems;
 
 use BackblazeB2\Client;
 use League\Flysystem\Filesystem as Flysystem;
-use Mhetreramesh\Flysystem\BackblazeAdapter;
+use MarcAndreAppel\FlysystemBackblaze\BackblazeAdapter;
 
 /**
  * Class BackblazeFilesystem
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 class BackblazeFilesystem implements Filesystem
 {
     /**
      * Test fitness of visitor.
-     * @param $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)

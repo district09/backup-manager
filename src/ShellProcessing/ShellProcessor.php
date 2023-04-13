@@ -1,4 +1,4 @@
-<?php namespace BackupManager\ShellProcessing;
+<?php namespace District09\BackupManager\ShellProcessing;
 
 use Symfony\Component\Process\Process;
 

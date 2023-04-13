@@ -1,8 +1,8 @@
-<?php namespace spec\BackupManager\ShellProcessing;
+<?php namespace spec\District09\BackupManager\ShellProcessing;
 
 use PhpSpec\ObjectBehavior;
 use Symfony\Component\Process\Process;
-use BackupManager\ShellProcessing\ShellProcessFailed;
+use District09\BackupManager\ShellProcessing\ShellProcessFailed;
 
 class ShellProcessorSpec extends ObjectBehavior
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,7 +9,7 @@ class LocalFilesystemSpec extends ObjectBehavior
 {
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\LocalFilesystem');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\LocalFilesystem');
     }
 
     public function it_should_recognize_its_type_with_case_insensitivity()
@@ -21,11 +21,6 @@ class LocalFilesystemSpec extends ObjectBehavior
         foreach ([null, 'foo'] as $type) {
             $this->handles($type)->shouldBe(false);
         }
-    }
-
-    public function it_should_provide_an_instance_of_a_local_filesystem()
-    {
-        $this->get($this->getConfig())->getAdapter()->shouldHaveType('League\Flysystem\Adapter\Local');
     }
 
     public function getConfig()

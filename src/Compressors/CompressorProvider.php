@@ -1,8 +1,8 @@
-<?php namespace BackupManager\Compressors;
+<?php namespace District09\BackupManager\Compressors;
 
 /**
  * Class CompressorProvider
- * @package BackupManager\Compressors
+ * @package District09\BackupManager\Compressors
  */
 class CompressorProvider
 {
@@ -18,7 +18,7 @@ class CompressorProvider
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @return Compressor
      * @throws CompressorTypeNotSupported
      */

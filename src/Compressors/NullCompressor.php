@@ -1,13 +1,13 @@
-<?php namespace BackupManager\Compressors;
+<?php namespace District09\BackupManager\Compressors;
 
 /**
  * Class NullCompressor
- * @package BackupManager\Compressors
+ * @package District09\BackupManager\Compressors
  */
 class NullCompressor implements Compressor
 {
     /**
-     * @param $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type)
@@ -16,7 +16,7 @@ class NullCompressor implements Compressor
     }
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getCompressCommandLine($inputPath)
@@ -25,7 +25,7 @@ class NullCompressor implements Compressor
     }
 
     /**
-     * @param $outputPath
+     * @param string $outputPath
      * @return string
      */
     public function getDecompressCommandLine($outputPath)
@@ -34,7 +34,7 @@ class NullCompressor implements Compressor
     }
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getCompressedPath($inputPath)
@@ -43,7 +43,7 @@ class NullCompressor implements Compressor
     }
 
     /**
-     * @param $inputPath
+     * @param string $inputPath
      * @return string
      */
     public function getDecompressedPath($inputPath)

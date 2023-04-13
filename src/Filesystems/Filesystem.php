@@ -1,14 +1,16 @@
-<?php namespace BackupManager\Filesystems;
+<?php
+
+namespace District09\BackupManager\Filesystems;
 
 /**
  * Interface Filesystem
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 interface Filesystem
 {
     /**
      * Test fitness of visitor.
-     * @param $type
+     * @param string|null $type
      * @return bool
      */
     public function handles($type);

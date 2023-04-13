@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\BackupManager\Filesystems;
+namespace spec\District09\BackupManager\Filesystems;
 
-use BackupManager\Config\Config;
-use BackupManager\Filesystems\LocalFilesystem;
+use District09\BackupManager\Config\Config;
+use District09\BackupManager\Filesystems\LocalFilesystem;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -17,7 +17,7 @@ class FilesystemProviderSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('BackupManager\Filesystems\FilesystemProvider');
+        $this->shouldHaveType('District09\BackupManager\Filesystems\FilesystemProvider');
     }
 
     public function it_should_provide_requested_filesystems_by_their_names()
@@ -28,7 +28,7 @@ class FilesystemProviderSpec extends ObjectBehavior
 
     public function it_should_throw_an_exception_if_a_filesystem_is_unsupported()
     {
-        $this->shouldThrow('BackupManager\Filesystems\FilesystemTypeNotSupported')->during('get', ['unsupported']);
+        $this->shouldThrow('District09\BackupManager\Filesystems\FilesystemTypeNotSupported')->during('get', ['unsupported']);
     }
 
     public function it_should_provide_a_list_of_all_available_providers()

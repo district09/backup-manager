@@ -1,12 +1,12 @@
-<?php namespace BackupManager\Filesystems;
+<?php namespace District09\BackupManager\Filesystems;
 
-use BackupManager\Config\Config;
-use BackupManager\Config\ConfigFieldNotFound;
-use BackupManager\Config\ConfigNotFoundForConnection;
+use District09\BackupManager\Config\Config;
+use District09\BackupManager\Config\ConfigFieldNotFound;
+use District09\BackupManager\Config\ConfigNotFoundForConnection;
 
 /**
  * Class FilesystemProvider
- * @package BackupManager\Filesystems
+ * @package District09\BackupManager\Filesystems
  */
 class FilesystemProvider
 {
@@ -32,7 +32,7 @@ class FilesystemProvider
     }
 
     /**
-     * @param $name
+     * @param string $name
      * @return \League\Flysystem\Filesystem
      * @throws FilesystemTypeNotSupported
      * @throws ConfigNotFoundForConnection
@@ -52,8 +52,8 @@ class FilesystemProvider
     }
 
     /**
-     * @param $name
-     * @param null $key
+     * @param string $name
+     * @param null|string $key
      * @return mixed
      * @throws ConfigNotFoundForConnection
      * @throws ConfigFieldNotFound
