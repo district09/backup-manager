@@ -7,8 +7,9 @@
 >
 > To switch, require `backup-manager/backup-manager` instead of
 > `district09/backup-manager` and replace the `District09\BackupManager`
-> namespace with `BackupManager`. Note that upstream 4.x has a typed API and
-> final concrete classes; see its changelog.
+> namespace with `BackupManager`. Upstream 3.3 has the same untyped API as this
+> fork. Upstream 4.x has a typed API and final concrete classes; see its
+> changelog.
 
 [![Latest Stable Version](https://poser.pugx.org/backup-manager/backup-manager/version.png)](https://packagist.org/packages/backup-manager/backup-manager)
 [![License](https://poser.pugx.org/backup-manager/backup-manager/license.png)](https://packagist.org/packages/backup-manager/backup-manager)
