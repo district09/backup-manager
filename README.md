@@ -1,5 +1,16 @@
 # Database Backup Manager
 
+> [!WARNING]
+> **This fork is abandoned.** Use [backup-manager/backup-manager](https://github.com/backup-manager/backup-manager)
+> instead: it is maintained again and its 4.x releases support Flysystem 3 and
+> symfony/process 7, which is what this fork was created for.
+>
+> To switch, require `backup-manager/backup-manager` instead of
+> `district09/backup-manager` and replace the `District09\BackupManager`
+> namespace with `BackupManager`. Upstream 3.3 has the same untyped API as this
+> fork. Upstream 4.x has a typed API and final concrete classes; see its
+> changelog.
+
 [![Latest Stable Version](https://poser.pugx.org/backup-manager/backup-manager/version.png)](https://packagist.org/packages/backup-manager/backup-manager)
 [![License](https://poser.pugx.org/backup-manager/backup-manager/license.png)](https://packagist.org/packages/backup-manager/backup-manager)
 [![Total Downloads](https://poser.pugx.org/backup-manager/backup-manager/downloads.png)](https://packagist.org/packages/backup-manager/backup-manager)

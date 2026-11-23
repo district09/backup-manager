@@ -2,6 +2,7 @@
   "name": "district09/backup-manager",
   "description": "A framework agnostic database backup manager with user-definable procedures and support for S3, Dropbox, FTP, SFTP, and more with drivers for popular frameworks.",
   "license": "MIT",
+  "abandoned": "backup-manager/backup-manager",
   "authors": [
     {
       "name": "Shawn McCool",
